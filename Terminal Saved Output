@@ -1,0 +1,995 @@
+Last login: Mon Sep 19 14:11:14 on ttys000
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.10.0
+Homebrew 0.9.9 (git revision cfc9; last commit 2016-09-10) Homebrew/homebrew-core (git revision fa4f; last commit 2016-09-10)
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin15]
+node v6.5.0
+psql (PostgreSQL) 9.5.4
+------------------------------------------
+type unwelcome to remove this message
+FosterT ~
+$ ls
+2	       Documents/  Library/  Pictures/	fundamentals/  src/
+Applications/  Downloads/  Movies/   Public/	funny_things/
+Desktop/       GA-Blog/    Music/    code/	post.txt
+FosterT ~
+$ cd code/wdi/
+FosterT ~/code/wdi
+$ ls
+cli-practice/  sandbox/  test.txt
+FosterT ~/code/wdi
+$ mkdir test-project
+gmkdir: created directory 'test-project'
+FosterT ~/code/wdi
+$ ls
+cli-practice/  sandbox/  test-project/	test.txt
+FosterT ~/code/wdi
+$ cd test-project/
+FosterT ~/code/wdi/test-project
+$ touch index.html
+FosterT ~/code/wdi/test-project
+$ mkdir css
+gmkdir: created directory 'css'
+FosterT ~/code/wdi/test-project
+$ mkdir js
+gmkdir: created directory 'js'
+FosterT ~/code/wdi/test-project
+$ ls
+css/  index.html  js/
+FosterT ~/code/wdi/test-project
+$ cd css
+FosterT ~/code/wdi/test-project/css
+$ touch style.css
+FosterT ~/code/wdi/test-project/css
+$ cd ../
+FosterT ~/code/wdi/test-project
+$ ls
+css/  index.html  js/
+FosterT ~/code/wdi/test-project
+$ cd js
+FosterT ~/code/wdi/test-project/js
+$ ls
+FosterT ~/code/wdi/test-project/js
+$ touch script.js
+FosterT ~/code/wdi/test-project/js
+$ cd ../
+FosterT ~/code/wdi/test-project
+$ cd../
+-bash: cd../: No such file or directory
+FosterT ~/code/wdi/test-project
+$ cd ../
+FosterT ~/code/wdi
+$ ls
+cli-practice/  sandbox/  test-project/	test.txt
+FosterT ~/code/wdi
+$ ls
+cli-practice/  sandbox/  test.txt
+FosterT ~/code/wdi
+$ cd cli-practice/
+FosterT ~/code/wdi/cli-practice
+$ ls
+test-project/  test.html
+FosterT ~/code/wdi/cli-practice
+$ cd test-project/
+FosterT ~/code/wdi/cli-practice/test-project
+$ tree
+.
+├── css
+│   └── style.css
+├── index.html
+└── js
+    └── script.js
+
+2 directories, 3 files
+FosterT ~/code/wdi/cli-practice/test-project
+$ cd ..
+FosterT ~/code/wdi/cli-practice
+$ ls
+test-project/  test.html
+FosterT ~/code/wdi/cli-practice
+$ ls
+test-project/  test.html
+FosterT ~/code/wdi/cli-practice
+$ rm -r test-project/
+removed 'test-project/.DS_Store'
+removed 'test-project/css/.DS_Store'
+removed 'test-project/css/style.css'
+removed directory 'test-project/css'
+removed 'test-project/index.html'
+removed 'test-project/js/.DS_Store'
+removed 'test-project/js/script.js'
+removed directory 'test-project/js'
+removed directory 'test-project/'
+FosterT ~/code/wdi/cli-practice
+$ ls
+test.html
+FosterT ~/code/wdi/cli-practice
+$ ls
+test.html
+FosterT ~/code/wdi/cli-practice
+$ mkdir test-project
+gmkdir: created directory 'test-project'
+FosterT ~/code/wdi/cli-practice
+$ cd test-project/
+FosterT ~/code/wdi/cli-practice/test-project
+$ mkdir css js
+gmkdir: created directory 'css'
+gmkdir: created directory 'js'
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+css/  js/
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+css/  js/
+FosterT ~/code/wdi/cli-practice/test-project
+$ touch css/style.css
+FosterT ~/code/wdi/cli-practice/test-project
+$ touch js/script.js
+FosterT ~/code/wdi/cli-practice/test-project
+$ tree
+.
+├── css
+│   └── style.css
+└── js
+    └── script.js
+
+2 directories, 2 files
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+css/  js/
+FosterT ~/code/wdi/cli-practice/test-project
+$ touch index.html
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+css/  index.html  js/
+FosterT ~/code/wdi/cli-practice/test-project
+$ tree
+.
+├── css
+│   └── style.css
+├── index.html
+└── js
+    └── script.js
+
+2 directories, 3 files
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+css/  index.html  js/
+FosterT ~/code/wdi/cli-practice/test-project
+$ touch js/app.css
+FosterT ~/code/wdi/cli-practice/test-project
+$ tree
+.
+├── css
+│   └── style.css
+├── index.html
+└── js
+    ├── app.css
+    └── script.js
+
+2 directories, 4 files
+FosterT ~/code/wdi/cli-practice/test-project
+$ mv js/app.css css/app.css
+'js/app.css' -> 'css/app.css'
+FosterT ~/code/wdi/cli-practice/test-project
+$ tree
+.
+├── css
+│   ├── app.css
+│   └── style.css
+├── index.html
+└── js
+    └── script.js
+
+2 directories, 4 files
+FosterT ~/code/wdi/cli-practice/test-project
+$ cp js/script.js js.script.backup.js
+'js/script.js' -> 'js.script.backup.js'
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+css/  index.html  js/  js.script.backup.js
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+css/  index.html  js/  js.script.backup.js
+FosterT ~/code/wdi/cli-practice/test-project
+$ tree
+.
+├── css
+│   ├── app.css
+│   └── style.css
+├── index.html
+├── js
+│   └── script.js
+└── js.script.backup.js
+
+2 directories, 5 files
+FosterT ~/code/wdi/cli-practice/test-project
+$ cd js/
+FosterT ~/code/wdi/cli-practice/test-project/js
+$ ls
+script.js
+FosterT ~/code/wdi/cli-practice/test-project/js
+$ cd ../
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+css/  index.html  js/  js.script.backup.js
+FosterT ~/code/wdi/cli-practice/test-project
+$ mv js.script.backup.js ../../
+'js.script.backup.js' -> '../../js.script.backup.js'
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+css/  index.html  js/
+FosterT ~/code/wdi/cli-practice/test-project
+$ cd../../
+-bash: cd../../: No such file or directory
+FosterT ~/code/wdi/cli-practice/test-project
+$ cd ../../
+FosterT ~/code/wdi
+$ ls
+cli-practice/  js.script.backup.js  sandbox/  test.txt
+FosterT ~/code/wdi
+$ tree
+.
+├── cli-practice
+│   ├── test-project
+│   │   ├── css
+│   │   │   ├── app.css
+│   │   │   └── style.css
+│   │   ├── index.html
+│   │   └── js
+│   │       └── script.js
+│   └── test.html
+├── js.script.backup.js
+├── sandbox
+│   ├── github-first
+│   │   ├── README.md
+│   │   └── index.html
+│   └── prep
+│       ├── css
+│       │   └── style.css
+│       ├── index.html
+│       └── new
+└── test.txt
+
+9 directories, 11 files
+FosterT ~/code/wdi
+$ ls
+cli-practice/  js.script.backup.js  sandbox/  test.txt
+FosterT ~/code/wdi
+$ cd cli-practice/
+FosterT ~/code/wdi/cli-practice
+$ ls
+test-project/  test.html
+FosterT ~/code/wdi/cli-practice
+$ cd test-project/
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+css/  index.html  js/
+FosterT ~/code/wdi/cli-practice/test-project
+$ ../
+-bash: ../: is a directory
+FosterT ~/code/wdi/cli-practice/test-project
+$ cd ../
+FosterT ~/code/wdi/cli-practice
+$ cd ../
+FosterT ~/code/wdi
+$ ls
+cli-practice/  js.script.backup.js  sandbox/  test.txt
+FosterT ~/code/wdi
+$ rm -r js.script.backup.js 
+removed 'js.script.backup.js'
+FosterT ~/code/wdi
+$ ls
+cli-practice/  sandbox/  test.txt
+FosterT ~/code/wdi
+$ cd cli-practice/
+FosterT ~/code/wdi/cli-practice
+$ ls
+test-project/  test.html
+FosterT ~/code/wdi/cli-practice
+$ rm test-project/
+grm: cannot remove 'test-project/': Is a directory
+FosterT ~/code/wdi/cli-practice
+$ rm -r test-project/
+removed 'test-project/css/app.css'
+removed 'test-project/css/style.css'
+removed directory 'test-project/css'
+removed 'test-project/index.html'
+removed 'test-project/js/script.js'
+removed directory 'test-project/js'
+removed directory 'test-project/'
+FosterT ~/code/wdi/cli-practice
+$ mkdir test-project && touch test-project/index.html && mkdir css && touch test-project/css/style.css && mkdir js && touch tes-project/js/script.js
+gmkdir: created directory 'test-project'
+gmkdir: created directory 'css'
+touch: test-project/css/style.css: No such file or directory
+FosterT ~/code/wdi/cli-practice
+$ tree
+.
+├── css
+├── test-project
+│   └── index.html
+└── test.html
+
+2 directories, 2 files
+FosterT ~/code/wdi/cli-practice
+$ cd test-project/
+FosterT ~/code/wdi/cli-practice/test-project
+$ tree
+.
+└── index.html
+
+0 directories, 1 file
+FosterT ~/code/wdi/cli-practice/test-project
+$ clear
+
+FosterT ~/code/wdi/cli-practice/test-project
+$ ls
+index.html
+FosterT ~/code/wdi/cli-practice/test-project
+$ cd ../
+FosterT ~/code/wdi/cli-practice
+$ ls
+css/  test-project/  test.html
+FosterT ~/code/wdi/cli-practice
+$ mkdir thelionking
+gmkdir: created directory 'thelionking'
+FosterT ~/code/wdi/cli-practice
+$ cd thelionking/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ mkdir pridelands
+gmkdir: created directory 'pridelands'
+FosterT ~/code/wdi/cli-practice/thelionking
+$ cd pridelands/
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ touch mufassa.txt scar.txt simba.html fafiki.js
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ ls
+fafiki.js  mufassa.txt	scar.txt  simba.html
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ cd ../
+FosterT ~/code/wdi/cli-practice/thelionking
+$ mkdir elephantgraveyard
+gmkdir: created directory 'elephantgraveyard'
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ cd pridelands/
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ ls
+fafiki.js  mufassa.txt	scar.txt  simba.html
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ mv pridelands mufassa.txt elephantgraveyard
+gmv: target 'elephantgraveyard' is not a directory
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ ls
+fafiki.js  mufassa.txt	scar.txt  simba.html
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ cd../
+-bash: cd../: No such file or directory
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ ls
+fafiki.js  mufassa.txt	scar.txt  simba.html
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ cd ../
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ cd elephantgraveyard/
+FosterT ~/code/wdi/cli-practice/thelionking/elephantgraveyard
+$ ls
+FosterT ~/code/wdi/cli-practice/thelionking/elephantgraveyard
+$ mv pridelands mufassa.txt elephantgraveyard
+gmv: target 'elephantgraveyard' is not a directory
+FosterT ~/code/wdi/cli-practice/thelionking/elephantgraveyard
+$ ls
+FosterT ~/code/wdi/cli-practice/thelionking/elephantgraveyard
+$ touch hyenas.txt
+FosterT ~/code/wdi/cli-practice/thelionking/elephantgraveyard
+$ ls
+hyenas.txt
+FosterT ~/code/wdi/cli-practice/thelionking/elephantgraveyard
+$ mv pridelands/mufassa.txt elephantgraveyard
+gmv: cannot stat 'pridelands/mufassa.txt': No such file or directory
+FosterT ~/code/wdi/cli-practice/thelionking/elephantgraveyard
+$ cd ../
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ mv pridelands/mufassa.txt elephantgraveyard
+'pridelands/mufassa.txt' -> 'elephantgraveyard/mufassa.txt'
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ cd elephantgraveyard/
+FosterT ~/code/wdi/cli-practice/thelionking/elephantgraveyard
+$ ls
+hyenas.txt  mufassa.txt
+FosterT ~/code/wdi/cli-practice/thelionking/elephantgraveyard
+$ cd ../
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ mkdir thegorge
+gmkdir: created directory 'thegorge'
+FosterT ~/code/wdi/cli-practice/thelionking
+$ cd ../
+FosterT ~/code/wdi/cli-practice
+$ mv elephantgraveyard/hyenas.txt thegorge
+gmv: cannot stat 'elephantgraveyard/hyenas.txt': No such file or directory
+FosterT ~/code/wdi/cli-practice
+$ ls
+css/  test-project/  test.html	thelionking/
+FosterT ~/code/wdi/cli-practice
+$ cd thelionking/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ mkdir thejungle
+gmkdir: created directory 'thejungle'
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/  thegorge/  thejungle/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ rm -r thegorge
+removed directory 'thegorge'
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/  thejungle/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ cd pridelands/
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ ls
+fafiki.js  scar.txt  simba.html
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ mv simba.html matthewbroderickssimba.txt
+'simba.html' -> 'matthewbroderickssimba.txt'
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ ls
+fafiki.js  matthewbroderickssimba.txt  scar.txt
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ cd ../
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/  thejungle/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ cd pridelands/
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ touch circleoflife.txt
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ ls
+circleoflife.txt  fafiki.js  matthewbroderickssimba.txt  scar.txt
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ ls
+circleoflife.txt  fafiki.js  matthewbroderickssimba.txt  scar.txt
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ rm scar.txt
+removed 'scar.txt'
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ ls
+circleoflife.txt  fafiki.js  matthewbroderickssimba.txt
+FosterT ~/code/wdi/cli-practice/thelionking/pridelands
+$ cd ../
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/  thejungle/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ rm -r the jungle
+grm: cannot remove 'the': No such file or directory
+grm: cannot remove 'jungle': No such file or directory
+FosterT ~/code/wdi/cli-practice/thelionking
+$ rm the jungle
+grm: cannot remove 'the': No such file or directory
+grm: cannot remove 'jungle': No such file or directory
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/  thejungle/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ rm thejungle
+grm: cannot remove 'thejungle': Is a directory
+FosterT ~/code/wdi/cli-practice/thelionking
+$ rm -r thejungle
+removed directory 'thejungle'
+FosterT ~/code/wdi/cli-practice/thelionking
+$ ls
+elephantgraveyard/  pridelands/
+FosterT ~/code/wdi/cli-practice/thelionking
+$ cd ~
+FosterT ~
+$ ls
+2	       Documents/  Library/  Pictures/	fundamentals/  src/
+Applications/  Downloads/  Movies/   Public/	funny_things/
+Desktop/       GA-Blog/    Music/    code/	post.txt
+FosterT ~
+$ cd code/
+FosterT ~/code
+$ ls
+wdi/
+FosterT ~/code
+$ cd wdi/
+FosterT ~/code/wdi
+$ ls
+cli-practice/  sandbox/  test.txt
+FosterT ~/code/wdi
+$ mkdir homework
+gmkdir: created directory 'homework'
+FosterT ~/code/wdi
+$ cd homework/
+FosterT ~/code/wdi/homework
+$ git clone git@github.com:generalassembly-atx/cli_golf.git
+Cloning into 'cli_golf'...
+Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+FosterT ~/code/wdi/homework
+$ ls
+FosterT ~/code/wdi/homework
+$ git clone https://github.com/generalassembly-atx/cli_golf.git
+Cloning into 'cli_golf'...
+remote: Counting objects: 12, done.
+remote: Total 12 (delta 0), reused 0 (delta 0), pack-reused 12
+Unpacking objects: 100% (12/12), done.
+FosterT ~/code/wdi/homework
+$ ls
+cli_golf/
+FosterT ~/code/wdi/homework
+$ open .
+FosterT ~/code/wdi/homework
+$ ls
+cli_golf/
+FosterT ~/code/wdi/homework
+$ cd cli_golf/
+FosterT ~/code/wdi/homework/cli_golf on master[?]
+$ ls
+LICENSE.txt  README.md	kitchen/  kitchen.zip
+FosterT ~/code/wdi/homework/cli_golf on master[?]
+$ cd kitchen/
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ ls
+cans.txt  fridge/  pantry/
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ cd ~/.ssh
+FosterT ~/.ssh
+$ mkdir key_backup
+gmkdir: created directory 'key_backup'
+FosterT ~/.ssh
+$ cp id_rsa* key_backup
+'id_rsa' -> 'key_backup/id_rsa'
+'id_rsa.pub' -> 'key_backup/id_rsa.pub'
+FosterT ~/.ssh
+$ rm id_rsa*
+removed 'id_rsa'
+removed 'id_rsa.pub'
+FosterT ~/.ssh
+$ cd ~/.ssh
+FosterT ~/.ssh
+$ ssh-keygen -t rsa -C "thomasfoster90@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/FosterT/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/FosterT/.ssh/id_rsa.
+Your public key has been saved in /Users/FosterT/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:zLwFs0vDRwIA125N3phBBGHQsj8iELY9JgCSe29mNHE thomasfoster90@gmail.com
+The key's randomart image is:
++---[RSA 2048]----+
+|+...+===o        |
+|=. .o.E.o        |
+|ooo  * ++=.      |
+|oo.++ o==*.      |
+| ooo.+  S o      |
+|  . * o. *       |
+|   = . .o        |
+|                 |
+|                 |
++----[SHA256]-----+
+FosterT ~/.ssh
+$ pbcopy < ~/.ssh/id_rsa.pub
+FosterT ~/.ssh
+$ ssh -T git@github.com
+Saving password to keychain failed
+Identity added: /Users/FosterT/.ssh/id_rsa ((null))
+Hi thomasfoster90! You've successfully authenticated, but GitHub does not provide shell access.
+FosterT ~/.ssh
+$ cd ~
+FosterT ~
+$ ls
+2	       Documents/  Library/  Pictures/	fundamentals/  src/
+Applications/  Downloads/  Movies/   Public/	funny_things/
+Desktop/       GA-Blog/    Music/    code/	post.txt
+FosterT ~
+$ cd code/
+FosterT ~/code
+$ ls
+wdi/
+FosterT ~/code
+$ cd wdi/
+FosterT ~/code/wdi
+$ ls
+cli-practice/  homework/  sandbox/  test.txt
+FosterT ~/code/wdi
+$ cd homework/
+FosterT ~/code/wdi/homework
+$ ls
+cli_golf/
+FosterT ~/code/wdi/homework
+$ cd cli_golf/
+FosterT ~/code/wdi/homework/cli_golf on master[?]
+$ ls
+LICENSE.txt  README.md	kitchen/  kitchen.zip
+FosterT ~/code/wdi/homework/cli_golf on master[?]
+$ cd kitchen/
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ ls
+cans.txt  fridge/  pantry/
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ mv cans.txt pantry/
+'cans.txt' -> 'pantry/cans.txt'
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 14 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ mv pantry/crisper-drawer/ fridge/
+'pantry/crisper-drawer/' -> 'fridge/crisper-drawer'
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 14 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ touch fridge/crisper-drawer/apples.txt
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 15 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ rm fridge/diapers.txt 
+removed 'fridge/diapers.txt'
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 14 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ rm fridge/freezer/couch.txt 
+removed 'fridge/freezer/couch.txt'
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ rm fridge/trashcan/
+grm: cannot remove 'fridge/trashcan/': Is a directory
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ rm -r fridge/trashcan/
+removed 'fridge/trashcan/banana-peels.txt'
+removed 'fridge/trashcan/chicken-bones.txt'
+removed 'fridge/trashcan/egg-shells.txt'
+removed 'fridge/trashcan/sink/clean-dishes.txt'
+removed 'fridge/trashcan/sink/delete-me.txt'
+removed 'fridge/trashcan/sink/dirty-dishes.txt'
+removed directory 'fridge/trashcan/sink'
+removed directory 'fridge/trashcan/'
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+4 directories, 7 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ clear
+
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+4 directories, 7 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ ls
+fridge/  pantry/
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ mkdir sink trashcan
+gmkdir: created directory 'sink'
+gmkdir: created directory 'trashcan'
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/  trashcan/
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ touch sink/dirty-dishes.txt sink/drying-rack
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/  trashcan/
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+└── trashcan
+
+6 directories, 9 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ cd fridge/sink
+-bash: cd: fridge/sink: No such file or directory
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/  trashcan/
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ cd sink
+FosterT ~/code/wdi/homework/cli_golf/kitchen/sink on master[?]
+$ ls
+dirty-dishes.txt  drying-rack
+FosterT ~/code/wdi/homework/cli_golf/kitchen/sink on master[?]
+$ cd drying-rack 
+-bash: cd: drying-rack: Not a directory
+FosterT ~/code/wdi/homework/cli_golf/kitchen/sink on master[?]
+$ rm drying-rack 
+removed 'drying-rack'
+FosterT ~/code/wdi/homework/cli_golf/kitchen/sink on master[?]
+$ ls
+dirty-dishes.txt
+FosterT ~/code/wdi/homework/cli_golf/kitchen/sink on master[?]
+$ mkdir drying-rack
+gmkdir: created directory 'drying-rack'
+FosterT ~/code/wdi/homework/cli_golf/kitchen/sink on master[?]
+$ tree
+.
+├── dirty-dishes.txt
+└── drying-rack
+
+1 directory, 1 file
+FosterT ~/code/wdi/homework/cli_golf/kitchen/sink on master[?]
+$ touch drying-rack/clean-dishes.txt
+FosterT ~/code/wdi/homework/cli_golf/kitchen/sink on master[?]
+$ cd ../ ../
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/  trashcan/
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+
+7 directories, 9 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ cd fridge/
+FosterT ~/code/wdi/homework/cli_golf/kitchen/fridge on master[?]
+$ ls
+crisper-drawer/  freezer/  milk.txt
+FosterT ~/code/wdi/homework/cli_golf/kitchen/fridge on master[?]
+$ cd ../
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/  trashcan/
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ rm trashcan/
+grm: cannot remove 'trashcan/': Is a directory
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ cd trashcan/
+FosterT ~/code/wdi/homework/cli_golf/kitchen/trashcan on master
+$ ls
+FosterT ~/code/wdi/homework/cli_golf/kitchen/trashcan on master
+$ touch banana-peels.txt chicken-bones.txt egg-shells.txt
+FosterT ~/code/wdi/homework/cli_golf/kitchen/trashcan on master[?]
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt
+FosterT ~/code/wdi/homework/cli_golf/kitchen/trashcan on master[?]
+$ cd ../ ../
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ open.
+-bash: open.: command not found
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ open .
+FosterT ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ 
